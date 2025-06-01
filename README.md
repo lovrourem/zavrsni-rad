@@ -1,5 +1,6 @@
 # zavrsni-rad
 HR: Praćenje osobnih aktivnosti uporabom dostupnih ugradbenih računala i senzora
+
 EN: Monitoring personal activities with low-cost embedded computers and sensors
 
 Opis:
