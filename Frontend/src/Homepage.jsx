@@ -61,7 +61,12 @@ function Homepage(){
             const res = await fetch(`${baseUrl}/pulselogs/deepsleep`);
             if (res.ok) {
                 const data = await res.json();
-                setDeepSleepInfo(data);
+                setDeepSleepInfo({
+                    deepMinutes: data.deepMinutes ?? 0,
+                    totalMinutes: data.totalMinutes ?? 0,
+                    percentage: data.percentage ?? 0,
+                    movementCount: data.movementCount ?? 0
+                });
                 console.log("Deep sleep info:", data);
             }
         } catch (error) {
