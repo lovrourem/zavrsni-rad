@@ -620,7 +620,7 @@ void loopHalfMode(){
     lastStepCheck = millis();
     if (detectStep()) {
       stepCount++;
-      Serial.print("Step detected");
+      Serial.print("Step detected: ");
       Serial.println(stepCount);
     }
   }
